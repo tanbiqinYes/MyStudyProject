@@ -9,6 +9,10 @@
 	*{
 		/* cursor: none !important; */
 	}
+	.container{
+		background: url('images/training-box-2.jpg') no-repeat;
+		background-position: calc(100% - 50px) calc(100% - 20px);
+	}
 	p{
 		color: transparent;
 		text-shadow: #111 0 0 2px;
@@ -38,13 +42,16 @@
 		margin: 0 auto;
 	}
 </style>
-	<h2>Where is my mouse?</h2>
-	<p class="">文字模糊效果，Hello World!</p>
-	<div class="wrapper">
-		<span class="center-vertical">垂直居中</span>
+	<div class="container">
+		<h2>Where is my mouse?</h2>
+		<p class="">文字模糊效果，Hello World!</p>
+		<div class="wrapper">
+			<span class="center-vertical">垂直居中</span>
+		</div>
+		<div class="borders">
+			<span class="center-vertical">多重边框</span>
+		</div>
 	</div>
-	<div class="borders">
-		<span class="center-vertical">多重边框</span>
-	</div>
+
 </body>
 </html>

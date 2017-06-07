@@ -1,0 +1,18 @@
+html,body,div,p,ul,li,h2{ margin: 0; padding: 0;}
+body{ font-size: 14px;}
+.topNav{
+	display: flex;
+	justify-content:space-between;
+	box-shadow: 0 2px 8px #e0e0e0;
+	.item{
+		flex: 0 0 33.33%;
+		height: 43px;
+		line-height: 43px;
+		text-align: center;
+		border-right: 1px solid #e9e9e9;
+
+		&:last-child{
+			border-right: none;
+		}
+	}
+}

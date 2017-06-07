@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex 练习</title>
+</head>
+<style>
+	.box{
+		display: flex;
+		width: 120px;
+		height: 120px;
+		background: pink;
+		margin: 10px 10px 0 0;
+	}
+	.item{
+		width: 40px;
+		height: 40px;
+		background: #000;
+		border-radius: 50%;
+	}
+	.box1{ justify-content: center;}
+	.box2{ justify-content: flex-end;}
+	.box3{ align-items: center;}
+	.box4{ align-items: center; justify-content: center;}
+	.box5{ align-items: flex-end; justify-content: center;}
+	.box6{ align-items: flex-end; justify-content: flex-end;}
+	.box7{ justify-content: space-between;}
+	.box8{ justify-content: space-around;}
+	.box9{ flex-direction: column; justify-content: space-between;}
+	.box9-1{ flex-direction: column; justify-content: space-around;}
+	.box10{ flex-direction: column; justify-content: space-between; align-items: center;}
+	.box10-1{ flex-direction: column; justify-content: space-around; align-items: center;}
+	.box11{ flex-direction: column; justify-content: space-between; align-items: flex-end;}
+	.box11-1{ flex-direction: column; justify-content: space-around; align-items: flex-end;}
+	.box12 .item:nth-child(2){ align-self: center; }
+	.box12-1 { justify-content: space-between; }
+	.box12-1 .item:nth-child(2){ align-self: flex-end; }
+	.box13 .item:nth-child(2){ align-self: center; }
+	.box13 .item:nth-child(3){ align-self: flex-end; }
+	.box14{ flex-wrap: wrap; justify-content: flex-end; align-content: space-between; }
+</style>
+<body>
+	<div class="box">
+		<span class="item"></span>
+	</div>
+	<div class="box box1">
+		<span class="item"></span>
+	</div>
+	<div class="box box2">
+		<span class="item"></span>
+	</div>
+	<div class="box box3">
+		<span class="item"></span>
+	</div>
+	<div class="box box4">
+		<span class="item"></span>
+	</div>
+	<div class="box box5">
+		<span class="item"></span>
+	</div>
+	<div class="box box6">
+		<span class="item"></span>
+	</div>
+	<div class="box box7">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box8">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box9">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box9-1">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box10">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box10-1">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box11">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box11-1">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box12">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box12-1">
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box13">
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	<div class="box box14">
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+		<span class="item"></span>
+	</div>
+	
+</body>
+</html>

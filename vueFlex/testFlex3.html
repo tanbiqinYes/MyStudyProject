@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex - 网格布局</title>
+</head>
+<style>
+	.Grid{
+		display: flex;
+	}
+	.Grid-cell{
+		flex: 1;
+	}
+	.Grid-cell.u-full {
+	  flex: 0 0 100%;
+	  background: pink;
+	}
+	.Grid-cell.u-1of2 {
+	  flex: 0 0 50%;
+	  background: orange;
+	}
+	.Grid-cell.u-1of3 {
+	  flex: 0 0 33.33%;
+	  background: green;
+	}
+	.Grid-cell.u-1of4 {
+	  flex: 0 0 25%;
+	  background: #CCC;
+	}
+	
+</style>
+<body>
+	<div class="Grid">
+		<div class="Grid-cell">1</div>
+		<div class="Grid-cell">2</div>
+		<div class="Grid-cell">3</div>
+	</div>
+	<div class="Grid">
+		<div class="Grid-cell u-full">1</div>
+	</div>
+	<div class="Grid">
+		<div class="Grid-cell u-1of2">50%</div>
+		<div class="Grid-cell">auto</div>
+	</div>
+	<div class="Grid">
+		<div class="Grid-cell u-1of3">30%</div>
+		<div class="Grid-cell u-1of3">30%</div>
+		<div class="Grid-cell">auto</div>
+	</div>
+	<div class="Grid">
+		<div class="Grid-cell u-1of4">25%</div>
+		<div class="Grid-cell u-1of3">30%</div>
+		<div class="Grid-cell">auto</div>
+	</div>
+	
+</body>
+</html>

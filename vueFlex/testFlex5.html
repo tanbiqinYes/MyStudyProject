@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex - 固定的底栏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<meta name="format-detection" content="telephone=no" />
+</head>
+<style>
+	html,body,div,p{ margin: 0; padding: 0; }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+</style>
+<body class="Site">
+	  <header>头部</header>
+	  <main class="Site-content">主要内容</main>
+	  <footer>底部</footer>
+</body>
+</html>
