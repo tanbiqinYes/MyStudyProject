@@ -11,6 +11,8 @@ body{ font-size: 14px; font-family: 'arial, 黑体';}
 		line-height: 43px;
 		text-align: center;
 		border-right: 1px solid #e9e9e9;
+		background: url('../images/arrow.png') 80% center no-repeat;
+		background-size: 6px auto;
 		&:last-child{
 			border-right: none;
 		}
@@ -25,9 +27,15 @@ body{ font-size: 14px; font-family: 'arial, 黑体';}
 			}
 		}
 		&.active{
+			background: url('../images/arrowAsc.png') 80% center no-repeat;
+			background-size: 6px auto;
 			span{
 				color: #ff6a6a;
 			}
+		}
+		&.orderDes{
+			background: url('../images/arrowDes.png') 80% center no-repeat;
+			background-size: 6px auto;
 		}
 	}
 } 
@@ -72,6 +80,7 @@ body{ font-size: 14px; font-family: 'arial, 黑体';}
 	.testNmae{
 		position: relative;
 		padding-left: 8px;
+		padding-right: 10%;
 		h2{
 			color: #3f3f3f;
 			font-size: 15px;
@@ -89,7 +98,7 @@ body{ font-size: 14px; font-family: 'arial, 黑体';}
 			position: absolute;
 			width: 1px;
 			height: 82%;
-			left: -6px;
+			left: -2%;
 			top: 9%;
 			background: #f7f7f7;
 		}

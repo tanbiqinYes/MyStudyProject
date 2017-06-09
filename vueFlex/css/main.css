@@ -24,6 +24,8 @@ body {
   line-height: 43px;
   text-align: center;
   border-right: 1px solid #e9e9e9;
+  background: url('../images/arrow.png') 80% center no-repeat;
+  background-size: 6px auto;
 }
 .topNav .topNavItem:last-child {
   border-right: none;
@@ -38,8 +40,16 @@ body {
 .topNav .topNavItem.allClass span {
   color: #FFF;
 }
+.topNav .topNavItem.active {
+  background: url('../images/arrowAsc.png') 80% center no-repeat;
+  background-size: 6px auto;
+}
 .topNav .topNavItem.active span {
   color: #ff6a6a;
+}
+.topNav .topNavItem.orderDes {
+  background: url('../images/arrowDes.png') 80% center no-repeat;
+  background-size: 6px auto;
 }
 /* 列表 */
 .list {
@@ -82,6 +92,7 @@ body {
 .list .testNmae {
   position: relative;
   padding-left: 8px;
+  padding-right: 10%;
 }
 .list .testNmae h2 {
   color: #3f3f3f;
@@ -100,7 +111,7 @@ body {
   position: absolute;
   width: 1px;
   height: 82%;
-  left: -6px;
+  left: -2%;
   top: 9%;
   background: #f7f7f7;
 }

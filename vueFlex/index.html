@@ -13,20 +13,19 @@
 <body>
 	<div id="app">
 		<div class="topNav">
-			<div class="topNavItem gradeOrder" v-bind:class="{'active': checkedFlag}" v-on:click="selectOrderWay(checkedFlag)">
+			<div class="topNavItem gradeOrder" v-bind:class="{'active': checkedFlag == 1 ,'orderDes': gradeOrder}" v-on:click="selectOrderWay(1)">
 				<span >分数</span>
 			</div>
-			<div class="topNavItem timeOrder" v-bind:class="{'active': checkedFlag}" >
+			<div class="topNavItem timeOrder" v-bind:class="{'active': checkedFlag == 2 , 'orderDes': timeOrder}" v-on:click="selectOrderWay(2)" >
 				<span >时间</span>
 			</div>
-			<div class="topNavItem allClass">
+			<div class="topNavItem allClass" v-on:click="selectOrderWay(0)">
 				<span >全部分类</span>
 			</div>
 		</div>
 		<div class="lists" v-for="item in testList">
 			<div class="list">
 				<div class="listItem grades">
-				<!-- v-bind:class="[{ green: isGreen}, {orange: isOrange}, {red: isRed}]" -->
 					<div class="listItemGrade"  v-bind:class="{ green: item.grades >= 80 , red: item.grades < 60 }">
 						<span>{{item.grades}}</span>分</div>
 					</div>
@@ -37,46 +36,6 @@
 						<p class="listItemDate">完成时间：<span>{{item.date}}</span></p>
 					</div>
 				</div>
-			<!-- <todo-item v-for="item in testList" v-bind:todo="item"></todo-item>	 -->
-			<!-- <div class="list">
-				<div class="listItem grades">
-					<div class="listItemGrade green">
-						<span>100</span>分
-					</div>
-				</div>
-				<div class="listItem testNmae">
-					<div class="rowLine"></div>
-					<h2>关于宠物营养的随堂测试</h2>
-					<div class="listItemDetail">课程：我们一直在努力推动宠物营养前进</div>
-					<p class="listItemDate">完成时间：<span>2017年2月20日</span></p>
-				</div>
-			</div> -->
-			<!-- <div class="list">
-				<div class="listItem grades">
-					<div class="listItemGrade orange">
-						<span>60</span>分
-					</div>
-				</div>
-				<div class="listItem testNmae">
-					<div class="rowLine"></div>
-					<h2>关于宠物营养的随堂测试</h2>
-					<div class="listItemDetail">课程：我们一直在努力推动宠物营养前进</div>
-					<p class="listItemDate">完成时间：<span>2017年2月20日</span></p>
-				</div>
-			</div>
-			<div class="list">
-				<div class="listItem grades">
-					<div class="listItemGrade red">
-						<span>0</span>分
-					</div>
-				</div>
-				<div class="listItem testNmae">
-					<div class="rowLine"></div>
-					<h2>关于宠物营养的随堂测试</h2>
-					<div class="listItemDetail">课程：我们一直在努力推动宠物营养前进</div>
-					<p class="listItemDate">完成时间：<span>2017年2月20日</span></p>
-				</div>
-			</div> -->
 		</div>
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
